@@ -1,0 +1,161 @@
+.well.well-lg {
+    height: 130px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+
+img#brand {
+    height: 100px;
+    width: 100px;
+}
+
+img {
+    height: 300px;
+    width: 200px;
+    /*    padding-right: 10px;*/
+}
+
+#container {
+    margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/*
+#container img{
+    
+    border:2px solid black;
+}
+*/
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+
+
+.flip-container {
+	perspective: 1000px;
+}
+
+
+/* flip the pane when hovered */
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+    
+		
+}
+
+.flip-container,
+.front,
+.back {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+  
+}
+
+
+/* flip speed goes here */
+
+.flipper {
+    
+    position: relative;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+
+/* hide back of pane during swap */
+
+.front,
+.back {
+    
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* front pane, placed above back */
+
+.front {
+    z-index:2;
+    
+}
+
+
+
+/* back, initially hidden pane */
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #131122;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+}
+
+.para {
+    margin-top: 20px;
+    font-size: 12px;
+    
+}
+
+button {
+    margin-top: 20px;
+    background-color: #eae1e1;
+    font-size: 12px;
+    color: black;
+    height: 30px;
+    width:120px;
+   
+}
+
+
+/* fancy Box========================*/
+
+input[type=text] {
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 2px solid #d11b1b;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 30%;
+}
+
+#bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body {
+    
+/*    background-image: url(background.jpg);*/
+    background-color: #C63D0F;
+}
